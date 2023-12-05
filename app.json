@@ -1,0 +1,37 @@
+{
+    "name": "Decryptonite-Bot",
+    "description": "A Very Simple Telegram bot.",
+    "keywords": [
+        "telegram",
+        "files",
+        "bot"
+    ],
+    "repository": "https://github.com/alreadydea/drrr",
+    "website": "https://github.com/alreadydea/drrr",
+    "success_url": "",
+    "env": {
+        "ID": {
+          "description": "Get this value from my.telegram.org",
+          "required": true
+        },
+        "HASH": {
+          "description": "Get this value from my.telegram.org",
+          "required": true
+        },
+        "TOKEN": {
+          "description": "Get this from @BotFather",
+          "required": true
+          
+    },
+    "buildpacks": [
+        { 
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
